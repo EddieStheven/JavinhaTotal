@@ -9,7 +9,7 @@ public class Start {
         // Objeto ( Transmissão ) instanciados
         Transmissao t1 = new Transmissao("Netflix");
         Transmissao t2 = new Transmissao("Amazon Play");
-        System.out.println("dodod");
+
         // Associando a classe ScreenMatch e a classe Transmissão
         Filme.setTransmissao(t1);
         Filme1.setTransmissao(t2);
