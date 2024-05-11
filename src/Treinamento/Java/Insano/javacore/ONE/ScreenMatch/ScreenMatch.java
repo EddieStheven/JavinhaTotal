@@ -56,7 +56,6 @@ public class ScreenMatch { // Atributos dos filmes
         } else{
             System.out.println("Filme não existe!");
         }
-        System.out.println("Teste");
     }
 
     // Encapsulamento dos atributos
