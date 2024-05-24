@@ -9,17 +9,17 @@ public class ScreenMatch { // Atributos dos filmes
     private Transmissao transmissao;
 
     // Método Construtor
-    public ScreenMatch(String nomeFilme, String diretorFilme, int ano, float notaFilme,boolean plano){
-         this.setNomeFilme(nomeFilme);
-         this.setDiretorFilme(diretorFilme);
-         this.setAno(ano);
-         this.setNotaFilme(notaFilme);
-         this.setPlano(plano);
+    public ScreenMatch(String nomeFilme, String diretorFilme, int ano, float notaFilme, boolean plano) {
+        this.setNomeFilme(nomeFilme);
+        this.setDiretorFilme(diretorFilme);
+        this.setAno(ano);
+        this.setNotaFilme(notaFilme);
+        this.setPlano(plano);
 
     }
 
-    public void Transmissao(){ // Método de transmissão
-        if(transmissao != null){ // Se transmissão possuir algum nome, ele vai imprimir
+    public void Transmissao() { // Método de transmissão
+        if (transmissao != null) { // Se transmissão possuir algum nome, ele vai imprimir
             System.out.println("Streaming: " + transmissao.getNome());
         }
     }
@@ -53,7 +53,7 @@ public class ScreenMatch { // Atributos dos filmes
             System.out.println("Filme é antigo!");
         } else if (ano < 1990) {
             System.out.println("Filme não encontrado!");
-        } else{
+        } else {
             System.out.println("Filme não existe!");
 
         }
@@ -63,36 +63,47 @@ public class ScreenMatch { // Atributos dos filmes
     public String getNomeFilme() {
         return NomeFilme;
     }
+
     public void setNomeFilme(String nomeFilme) {
         NomeFilme = nomeFilme;
     }
+
     public int getAno() {
         return ano;
     }
+
     public void setAno(int ano) {
         this.ano = ano;
     }
+
     public float getNotaFilme() {
         return notaFilme;
     }
+
     public void setNotaFilme(float notaFilme) {
         this.notaFilme = notaFilme;
     }
+
     public String getDiretorFilme() {
         return diretorFilme;
     }
+
     public void setDiretorFilme(String diretorFilme) {
         this.diretorFilme = diretorFilme;
     }
+
     public boolean isPlano() {
         return plano;
     }
+
     public void setPlano(boolean plano) {
         this.plano = plano;
     }
+
     public Transmissao getTransmissao() {
         return transmissao;
     }
+
     public void setTransmissao(Transmissao transmissao) {
         this.transmissao = transmissao;
     }

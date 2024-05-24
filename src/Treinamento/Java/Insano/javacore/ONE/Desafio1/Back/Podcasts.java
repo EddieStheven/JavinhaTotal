@@ -1,6 +1,6 @@
-package Treinamento.Java.Insano.javacore.ONE.Desafio1;
+package Treinamento.Java.Insano.javacore.ONE.Desafio1.Back;
 
-public class Podcasts extends Áudio{
+public class Podcasts extends Áudio {
 
     private String apresentador;
     private String descrição;
