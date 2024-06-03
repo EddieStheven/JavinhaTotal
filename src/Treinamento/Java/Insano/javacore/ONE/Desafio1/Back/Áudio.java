@@ -4,6 +4,7 @@ import Treinamento.Java.Insano.javacore.ONE.Desafio1.Back.Comandos;
 import org.w3c.dom.ls.LSOutput;
 
 public abstract class Áudio implements Comandos {
+    //Atributos do áudio
     private String titulo;
     private int duracao;
     private int totalDeReproducao;
@@ -12,7 +13,7 @@ public abstract class Áudio implements Comandos {
     private Service service;
 
 
-
+    // Método para imprimir
     public void imprime(){
         System.out.println("===========================================");
         System.out.println("     ");
@@ -22,12 +23,14 @@ public abstract class Áudio implements Comandos {
         service();
     }
 
+    // Método da classe serviço
     public void service(){
-        if (this.service != null ){
+        if (this.service != null ){ // se serviço for diferente de null, ele imprime o valor
             System.out.println("Você está escutando no: " + service.getNome());
         }
     }
 
+    // Encapsulamento dos atributos
     public String getTitulo() {
         return titulo;
     }
@@ -56,7 +59,7 @@ public abstract class Áudio implements Comandos {
         this.service = service;
     }
 
-
+    //Função das interfaces
     @Override
     public void curte() {
         if (getCurtidas() == 0) {

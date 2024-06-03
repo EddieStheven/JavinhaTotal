@@ -10,6 +10,7 @@ public class teste1 {
         // Informações que vão ser imprimidas
         Músicas music = new Músicas("Triller","Michael Jackson","Pop");
         Músicas music2 = new Músicas("777","Joji","Pop");
+        Áudio music4 = new Músicas("teste","teste1","teste2");
         Service t = new Service("Spotify");
         Service t2 = new Service("Amazon Music");
 
@@ -26,6 +27,8 @@ public class teste1 {
         // Imprimindo tudo
         music.imprime();
         music2.imprime();
+        music4.imprime();
+
 
 
 
