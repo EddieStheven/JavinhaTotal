@@ -2,7 +2,7 @@ package Treinamento.Java.Insano.javacore.ONE.ScreenMatch2;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Principal {
+public class Titulo {
     @SerializedName("Title")
     private String NomeFilme;
     private String diretorFilme;
@@ -11,12 +11,18 @@ public class Principal {
     private float notaFilme;
     private boolean plano;
 
-    public Principal(String nomeFilme, String diretorFilme, int anoDeLancamento, float notaFilme, boolean plano) {
+    public Titulo(String nomeFilme, String diretorFilme, int anoDeLancamento, float notaFilme, boolean plano) {
         NomeFilme = nomeFilme;
         this.diretorFilme = diretorFilme;
         this.anoDeLancamento = anoDeLancamento;
         this.notaFilme = notaFilme;
         this.plano = plano;
+    }
+
+    public Titulo(TituloOmdb meuTituloOmdb) {
+        this.NomeFilme = meuTituloOmdb.title();
+        this.anoDeLancamento = Integer.valueOf(meuTituloOmdb.year());
+
     }
 
     @Override

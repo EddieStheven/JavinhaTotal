@@ -9,8 +9,9 @@ import java.util.Scanner;
 
 public class Start {
     public static void main(String[] args) throws IOException, InterruptedException {
+
         //Objetos ( ScreenMatch ) instanciados
-        /* ScreenMatch Filme = new ScreenMatch("Shrek", "Andrew Adamson", 2001, 10.0F, true);
+        ScreenMatch Filme = new ScreenMatch("Shrek", "Andrew Adamson", 2001, 10.0F, true);
         ScreenMatch Filme1 = new ScreenMatch("Kung Fu Panda", "Mark Osborne", 2008, 10.0F, false);
 
         // Objeto ( Transmissão ) instanciados
@@ -23,26 +24,7 @@ public class Start {
 
         // Imprimindo as informações
         Filme.imprimirInfor();
-        Filme1.imprimirInfor(); */
-        // Buscar informações do filme
-
-        // Para buscar o filme
-        Scanner leitura = new Scanner(System.in);
-        System.out.println("Digite um filme para buscar: ");
-        String busca = leitura.nextLine();
-
-        String endereço = "https://www.omdbapi.com/?t=" + busca + "&apikey=bafdfbcf";
-
-        // API Screen Match
-        HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(endereço))
-                .build();
-
-        HttpResponse<String> response = client
-                .send(request, HttpResponse.BodyHandlers.ofString());
-
-        System.out.println(response.body());
+        Filme1.imprimirInfor();
 
 
 
