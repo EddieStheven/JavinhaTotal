@@ -1,4 +1,4 @@
-*O foco desses códigos foi o aprendizado POO (Programação Orientada a Objetos) !*
+*O foco desses códigos foi o aprendizado sobre POO (Programação Orientada a Objetos) !*
 
 *Como fazer a conexão git e github:*
 
