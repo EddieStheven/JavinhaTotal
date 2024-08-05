@@ -1,3 +1,7 @@
+*O foco desses códigos foi o aprendizado POO (Programação Orientada a Objetos)!*
+
+*Como fazer a conexão git e github:*
+
 Git init
  - Inicia um novo projeto com git
 
